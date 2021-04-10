@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tính chỉ số cân nặng</title>
+</head>
+<body>
+<!--<script>
+      let bmi = +prompt('nhap nhanh nao');
+      if (bmi < 18)
+          document.write("Underweight");
+      else if (bmi < 25.0)
+          document.write("Normal");
+      else if (bmi < 30.0)
+          document.write("Overweight");
+      else
+          document.write("Obese");
+  </script>-->
+  <form>
+      <input type="text" id="so_thang">
+      <input type="button" value="tinh so ngay" onclick="xuat_ra_so_ngay()" >
+  </form>
+<script>
+        function xuat_ra_so_ngay() {
+            let so_thang = document.getElementById("so_thang").value;
+           switch (so_thang){
+               case "1":
+                   alert("thang 1 có 31 ngay");
+                   break;
+               case "2":
+                   alert("thang 2 có 28 ngay");
+                   break;
+               case "3":
+                   alert("thang 2 có 31 ngay");
+                   break;
+               case "4":
+                   alert("thang 2 có 30 ngay");
+                   break;
+           }
+        }
+</script>
+</body>
+</html>
