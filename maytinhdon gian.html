@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>máy tính đơn giản</title>
+</head>
+<body>
+  <style>
+      table{
+          background-color: white;
+          margin: auto;
+      }
+      #ket_qua{
+          width: 140px;
+      }
+      .btn{
+          width: 34px;
+          height: 32px;
+      }
+  </style>
+  <table>
+      <tr>
+          <td colspan="5"><input id="ket_qua" type="text"></td>
+      </tr>
+      <tr>
+          <td><input class="btn" type="button" value="1" onclick="ket_qua.value+=this.value"></td>
+          <td><input class="btn" type="button" value="2" onclick="ket_qua.value+=this.value"></td>
+          <td><input class="btn" type="button" value="3" onclick="ket_qua.value+=this.value"></td>
+          <td><input class="btn" type="button" value="+" onclick="ket_qua.value+=this.value"></td>
+      </tr>
+      <tr>
+          <td><input class="btn" type="button" value="4" onclick="ket_qua.value+=this.value"></td>
+          <td><input class="btn" type="button" value="5" onclick="ket_qua.value+=this.value"></td>
+          <td><input class="btn" type="button" value="6" onclick="ket_qua.value+=this.value"></td>
+          <td><input class="btn" type="button" value="-" onclick="ket_qua.value+=this.value"></td>
+      </tr>
+      <tr>
+          <td><input class="btn" type="button" value="7" onclick="ket_qua.value+=this.value"></td>
+          <td><input class="btn" type="button" value="8" onclick="ket_qua.value+=this.value"></td>
+          <td><input class="btn" type="button" value="9" onclick="ket_qua.value+=this.value"></td>
+          <td><input class="btn" type="button" value="*" onclick="ket_qua.value+=this.value"></td>
+      </tr>
+      <tr>
+          <td><input class="btn" type="button" value="C" onclick="ket_qua.value=ket_qua.value.substr(0, ket_qua.value.length-1)"></td>
+          <td><input class="btn" type="button" value="0" onclick="ket_qua.value+=this.value"></td>
+          <td><input class="btn" type="button" value="=" onclick="ket_qua.value=eval(ket_qua.value)"></td>
+          <td><input class="btn" type="button" value="/" onclick="ket_qua.value+=this.value"></td>
+      </tr>
+  </table>
+</body>
+</html>
