@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>thực hành vòng lặp for</title>
+</head>
+<body>
+  <!--<script>
+      for (let index = 1; index <= 10; index++) {
+           console.log(index);
+      }
+  </script>-->
+  <script>
+     /* var person = {fristName: "le", LastName: "loi", address: "ha noi"}
+         for (var p in person) {
+             console.log(person[p]);
+         }*/
+     /*var webpage = "codegym.com";
+     for (var w of webpage) {
+         console.log(w);
+     }*/
+    /* var animal = [
+         {
+             id :1,
+             name: "cat",
+             size: "small"
+         },
+         {
+             id:2,
+             name: "dog",
+             size: "small"
+         }
+     ]
+     animal.forEach(function (animal){
+         console.log(animal);
+     })*/
+    /* var index = 1;
+     do{
+        console.log(index);
+        index++;
+     }while (index<=10);*/
+     /*var index = 10;
+     while (index>0){
+         console.log(index);
+         index--;
+     }*/
+    /* leti;
+     for (i = 0; i < 5; i++) {
+         text += "The number is " + i + "<br>";
+     }*/
+  </script>
+  <!--<h2>JavaScript Loops</h2>
+  <p id="demo"></p>
+<script>
+    let text = "";
+    let i;
+    for (i=0; i<5; i++) {
+        text+="the number is " + i + "<br>";
+    }
+    document.getElementById("demo").innerHTML=text;-->
+  </script>
+<script language="javascript">
+    /*let num = prompt("Enter your number: ");
+    let total = 0;
+    let i = 1   ;
+    for (; i<= num; i+=1 ) {
+    total= total+i ;
+    alert(total);
+    }*/
+    /*let num = +prompt("Enter a number: ");
+    let total = 0;
+    while (num!=-1){
+        num = +prompt("Enter a number: ");
+        alert(num);
+        total+= num;
+    }
+    alert(total);*/
+   /* let i = 1;
+
+    while (i < 100) {
+        document.write("<hr width =" + i + "%>");
+        i ++;
+    }*/
+    /*let value = null;
+    do{
+        value = prompt("nhap vao so tu 1 -> 10");
+    } while (value < 1 || value >10);
+    alert("số bạn vừa nhập là " + value);*/
+    /*let sout;
+    sout = "<table border = '1' width = '300' cellspacing = '0' cellpadding = '3'>"
+    for (i = 1; i <= 10; i++) {
+        sout = sout + "<tr>";
+        for (j = 1; j <= 10; j++){
+            sout = sout + "<td>" + i*j + "</td>"
+        }
+        sout = sout + "</tr>";
+    }
+    sout = sout + "</table>";
+    document.write(sout);*/
+    let sout, i, j;
+    sout = "<table border='1' width='300' cellspacing='0' cellpadding='3'>";
+    i = j = 1;
+    while (i <= 10) {
+        sout = sout + "<tr>";
+        while (j <= 10) {
+            sout = sout + "<td>" + i * j + "</td>";
+            j++;
+        }
+        sout = sout + "</tr>";
+        j = 1;
+        i++;
+    }
+    sout = sout + "</table>";
+    document.write(sout);
+</script>
+
+</body>
+</html>
