@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ứng dụng máy tính</title>
+</head>
+<body>
+ <h1>Calculator</h1>
+<form>
+    <input type="text" value="" id="n1" >
+    <input type="text" value="" id="n2" ><br><br>
+    <input type="button" value="Addition(+)" onclick="cong()"/>
+    <input type="button" value="Subtraction(-)" onclick="tru()"/>
+    <input type="button" value="Multiplication(X)" onclick="nhan()"/>
+    <input type="button" value="Division(/)" onclick="chia()" /><br><br>
+    kêt quả:<input type="text" id="ket_qua" name="kết quả"/>
+    <script>
+        function cong () {
+            let n1 = document.getElementById("n1").value;
+            let n2 = document.getElementById("n2").value;
+            document.getElementById("ket_qua").value = parseInt(n1) + parseInt(n2);
+        }
+        function tru () {
+            let n1 = document.getElementById("n1").value;
+            let n2 = document.getElementById("n2").value;
+            document.getElementById("ket_qua").value = parseInt(n1) - parseInt(n2);
+
+        }
+        function nhan() {
+            let n1 = document.getElementById("n1").value;
+            let n2 = document.getElementById("n2").value;
+            document.getElementById("ket_qua").value = parseInt(n1)*parseInt(n2);
+        }
+        function chia() {
+            let n1 = document.getElementById("n1").value;
+            let n2 = document.getElementById("n2").value;
+            document.getElementById("ket_qua").value = parseInt(n1)/parseInt(n2);
+        }
+    </script>
+</form>
+
+</body>
+</html>
