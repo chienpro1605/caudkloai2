@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>game puzzle</title>
+</head>
+<body>
+<img id="anh1" onclick="click1()" img src="../img/_part1x1.jpg" height="160" width="800"/>
+<img id="anh2" onclick="click2()" img src="../img/_part2x1.jpg" height="160" width="800"/>
+<script>
+      let a = 1 ;
+    function click1(){
+        if (a>=3) {
+            a = 1;
+        }else {
+            a++;
+        }
+        document.getElementById("anh1").src="../img/_part1x" + a + ".jpg"
+    }
+    let b = 1;
+    function click2(){
+        if (b>=3) {
+            b=1;
+        }else {
+            b++;
+        }
+        document.getElementById("anh2").src="../img/_part2x" + b + ".jpg"
+    }
+    if (a==b){
+        alert("winner");
+    }else{
+
+    }
+   </script>
+</body>
+</html>
