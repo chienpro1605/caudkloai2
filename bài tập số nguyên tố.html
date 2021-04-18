@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài tập điều kiện loại 1</title>
+</head>
+<body>
+  <!--<script>
+     /* let a = +prompt("nhập a =");
+      let b = +prompt("nhập b =");
+      let c = (a%b);
+      if (c == 0) {
+          alert("a chia hết cho b");
+      }else{
+          alert("a k chia hết b")
+      }*/
+     /*let age = +prompt('nhập tổi vào');
+     if (age < 15) {
+         alert('không đủ tuổi vào 10');
+     }else {
+         alert('đủ tuổi vào lớp 10');
+     }*/
+     /*let a = parseInt(prompt('nhập số vào'));
+     if(a>0){
+         alert('số này lớn hơn 0 nhé');
+     }else{
+         alert('số này nhỏ hơn hoặc bằng 0 nhé');
+     }*/
+     /*function isPrime(number){
+         if (number < 2)
+             return false;
+         for(i=2; i<number; i++){
+             if (number%i==0)
+                 return false;
+         }
+         return true;
+     }
+     let count = 0;
+     let number = 1;
+     let sum = 0;
+     let quan = +prompt("hay nhap so luong:  ");
+     document.write("danh sách các số nguyên tố " +"<br>");
+     while (count<quan) {
+         if (isPrime(number)==true){
+             count++;
+             sum+=number;
+             document.write(number + "<br> ");
+         }
+         number++;
+     }
+     document.write("<br>tong cac so: " +sum);*/
+
+
+  </script>-->
+  <script>
+      function isPrime(n){
+          let prime = true;
+          if (n<2){
+              prime = false;
+          }else {
+              for (let i = 2; i<n; i++){
+                  if (n%i==0){
+                      prime=false;
+                      break;
+                  }
+              }
+          }
+          if (prime==true){
+              document.write(n + " là số nguyên tố");
+          }else {
+              document.write(n + " không phải số nguyên tố");
+          }
+      }
+      isPrime(prompt("nhập vào số nguyên n:"));
+
+
+  </script>
+</body>
+</html>
